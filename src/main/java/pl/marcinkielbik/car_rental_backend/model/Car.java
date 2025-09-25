@@ -1,7 +1,14 @@
 package pl.marcinkielbik.car_rental_backend.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,10 +20,5 @@ public class Car {
 
     @Enumerated(EnumType.STRING)
     private CarStatus status;
-
-    public enum CarStatus {
-        AVAILABLE,
-        RENTED
-    }
 
 }
