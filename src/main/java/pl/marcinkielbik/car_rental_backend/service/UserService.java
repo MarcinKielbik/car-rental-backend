@@ -55,4 +55,9 @@ public class UserService {
 
         return userRepository.save(user);
     }
+
+    public boolean checkPassword(String rawPassword, String encodedPassword) {
+        return passwordEncoder.matches(rawPassword, encodedPassword);
+    }
+
 }
