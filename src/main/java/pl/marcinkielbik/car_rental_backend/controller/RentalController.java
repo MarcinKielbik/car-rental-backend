@@ -1,6 +1,5 @@
 package pl.marcinkielbik.car_rental_backend.controller;
 
-
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
