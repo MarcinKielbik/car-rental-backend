@@ -54,24 +54,7 @@ spring.jpa.show-sql=true
 
 
 
-## 🔑 Authentication
-
-Registration automatically assigns role: CLIENT
-
-Admin must be created manually (e.g. via DB INSERT or data.sql)
-
-Passwords are encrypted with BCrypt
-
-```
-Example data.sql for admin:
-INSERT INTO users (first_name, last_name, email, password, role)
-VALUES ('Admin', 'User', 'admin@car.com',
-        '$2a$10$2kEwZrhz...', -- BCrypt encoded password
-        'ADMIN');
-```
-
-
-3. Run the app:
+## 🔑 Run the app:
 ```
 ./mvnw spring-boot:run
 ```
